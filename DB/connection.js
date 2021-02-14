@@ -14,8 +14,10 @@ async function main(){
         
         const db = client.db('Inventory');
 
-        await dbOperations.insertItem(db, 'banana', 6);
-        await dbOperations.getItem(db, 'banana');
+
+        await dbOperations.insertItem(db, 'orange', 5, true);
+//        await dbOperations.getItem(db, 'banana');
+        await dbOperations.getAllItems(db);
 
         //await  listDatabases(client);
     } catch (e) {
