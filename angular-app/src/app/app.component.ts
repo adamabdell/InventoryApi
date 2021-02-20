@@ -6,6 +6,7 @@ import { AppServiceService } from './app-service.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   title = 'Food Inventory';
 
@@ -24,4 +25,3 @@ export class AppComponent implements OnInit {
       console.log('Error is ', error);
     })
   }
-}
