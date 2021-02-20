@@ -1,27 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { AppServiceService } from './app-service.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'Food Inventory';
-
-  constructor(private service : AppServiceService){
-
-  }
-
-  ngOnInit(){
-    this.getDataFromAPI();
-  }
-
-  getDataFromAPI(){
-    this.service.getData().subscribe((response) => {
-      console.log('Response from API is ', response)
-    }, (error) =>{
-      console.log('Error is ', error);
-    })
-  }
+export class AppComponent {
+  title = 'angular-app';
 }

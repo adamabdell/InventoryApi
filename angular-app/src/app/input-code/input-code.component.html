@@ -1,0 +1,40 @@
+<!-- Title -->
+<div>
+    <h1 class="space" align="center">
+        <b>Grocery Inventory!!</b>
+    </h1>
+</div>
+
+<!-- First Input if food exists, need to change to autocomplete -->
+<div class="space" style="text-align: center">
+    <p>PLEASE ENTER FOOD NAME:</p>
+    <mat-form-field class="input-width" align="center">
+        <mat-label>Food</mat-label>
+        <input matInput type="text" placeholder="Ex: Banana">
+    </mat-form-field>
+</div>
+
+<!-- If food doesn't exist -->
+<div class="space" style="text-align: center">
+    <p class="space">ENTER IF FOOD DOESN'T EXIST:</p>
+    <mat-form-field class="input-width" align="center">
+        <mat-label>Food</mat-label>
+        <input matInput type="text" placeholder="Ex: Banana">
+    </mat-form-field>
+</div>
+
+<!-- Enter number to determine how quantity in and out -->
+<div style="text-align: center">
+    <mat-form-field class="in-out-width">
+        <div>
+        <mat-label for="in">IN: </mat-label>
+        <input matInput type="number" name="in" id="in" placeholder="Enter Number">
+        </div>
+    </mat-form-field>
+    <mat-form-field>
+        <div>
+        <mat-label for="out">OUT: </mat-label>
+            <input matInput type="number" name="out" id="out" placeholder="Enter Number">
+        </div>
+    </mat-form-field>
+</div>
